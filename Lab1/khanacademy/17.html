@@ -1,0 +1,152 @@
+<!-- Project: Blog-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        <style>
+        body {
+            font-family: "Georgia", serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: pink;
+            font-size: 2.5em;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        h6 {
+            font-style: italic;
+            font-weight: normal;
+        }
+        
+        p {
+            font-family: "Arial", sans-serif;
+        }
+        
+        
+        a {
+            color:pink;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .post {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .first-post {
+            border: 1px solid #3498db;
+        }
+        
+        .second-post {
+            border: 1px solid #2ecc71;
+        }
+        
+        .important {
+            font-weight: bold;
+            color: pink;
+        }
+        
+        .code {
+            font-family: "Courier New", monospace;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <h1>Merei's blog</h1>
+
+        <div class="contents">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#first-post">My First Week Learning HTML!</a></li>
+                <li><a href="#second-post">CSS Magic - Making Things Look Pretty</a></li>
+            </ul>
+        </div>
+        
+        <div class="post first-post" id="first-post">
+            <h2>My First Week Learning HTML!</h2>
+            <h6>Posted on January 15, 2024</h6>
+            
+            <p>Wow, what an exciting week! I've just started my programming journey and I'm learning HTML. It's amazing how you can create web pages with just text and tags.</p>
+            
+            <p>Something really exciting happened today - I created my first proper HTML page with headings, paragraphs, and even a list! Here's some of what I learned:</p>
+            
+            <p class="code">
+                &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;List item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;List item 2&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </p>
+            
+            <p>The most <span class="important">important thing</span> I learned is that HTML gives structure to web pages. It's like building the skeleton of a website before you make it look pretty with CSS.</p>
+            
+            <p>I'm looking forward to next week when I start learning about links and images. My goal is to build a personal website by the end of the month!</p>
+        </div>
+        
+        <div class="post second-post" id="second-post">
+            <h2>CSS Magic - Making Things Look Pretty</h2>
+            <h6>Posted on January 22, 2024</h6>
+            
+            <p>This week has been all about CSS (Cascading Style Sheets), and I have to say - it's like magic! HTML creates the structure, but CSS makes everything look beautiful.</p>
+            
+            <p>I learned how to:</p>
+            <ul>
+                <li>Change font styles and sizes</li>
+                <li>Add colors to text and backgrounds</li>
+                <li>Adjust line height for better readability</li>
+                <li>Use classes and IDs to style specific elements</li>
+            </ul>
+            
+            <p>Here's some CSS I wrote to style this blog:</p>
+            
+            <p class="code">
+                body {<br>
+                &nbsp;&nbsp;font-family: "Georgia", serif;<br>
+                &nbsp;&nbsp;line-height: 1.6;<br>
+                &nbsp;&nbsp;background-color: #f8f9fa;<br>
+                }<br>
+                <br>
+                h1 {<br>
+                &nbsp;&nbsp;color: #2c3e50;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }
+            </p>
+            
+            <p>The <span class="important">coolest part</span> was learning about the box model - how every element has margin, border, and padding. Я поняла где и как распологаются все части у сайтов</p>
+            
+        </div>
+        
+    </body>
+</html>
