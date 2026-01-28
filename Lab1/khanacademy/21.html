@@ -1,2 +1,54 @@
 <!-- Challenge: Position planet-->
- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Position planet</title>
+        <style>
+            #scene {
+                position: relative;
+                width: 500px;
+                height: 400px;
+            }
+            
+            #greeting {
+                
+                position: absolute;
+                background: rgb(255, 255, 0);
+                border: 2px solid black;
+                font-family: "Comic Sans MS", fantasy;
+                padding: 5px;
+                width: 262px;
+                top: 50px;
+                left: 50px;
+                z-index: 3;
+            }
+            
+            #planet {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+            
+            #creature {
+                position: absolute;
+                top: 100px;
+                left: 150px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="scene">
+            <img id="planet" src="https://www.kasandbox.org/programming-images/space/planet.png" width="300">
+            <img id="creature" src="https://www.kasandbox.org/programming-images/avatars/mr-pink.png">
+        </div>
+        
+        <div id="greeting">
+            <p>Hello! Welcome to position planet!</p>
+        </div>
+        
+
+    </body>
+</html>
