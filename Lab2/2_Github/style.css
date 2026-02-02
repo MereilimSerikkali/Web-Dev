@@ -30,7 +30,7 @@ h1.title {
 }
 .cta {
     display: inline-block;
-    background: linear-gradient(rgb(61, 61, 61), black);
+    background: black;
     color: #fff;
     padding: 12px 22px;
     border-radius: 8px;
