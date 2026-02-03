@@ -112,7 +112,7 @@ body {
     font-size: 14px;
 }
 .gradient{
-    background: linear-gradient(to right, orange, red, purple);
+    background: linear-gradient(to right, rgb(211, 93, 51), rgb(255, 0, 128), rgb(208, 95, 208));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
