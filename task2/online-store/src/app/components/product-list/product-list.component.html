@@ -1,0 +1,49 @@
+<div class="container">
+  <header class = "header">
+    <img src="	https://kaspi.kz/img/Logo.svg">
+     <nav class="main-nav">
+      <div class="dropdown" (mouseenter)="showClientsMenu = true" (mouseleave)="showClientsMenu = false">
+        <button class="dropbtn">Клиентам</button>
+        <div class="dropdown-content" *ngIf="showClientsMenu">
+          <div class="dropdown-grid">
+            <div class="dropdown-section">
+              <h3>Продукты Kaspi.kz</h3>
+              <a href="#">Kaspi Gold</a>
+              <a href="#">Kaspi Gold для ребенка</a>
+              <a href="#">Kaspi Red</a>
+              <a href="#">Kaspi Депозит</a>
+              <a href="#">Накопительный Депозит</a>
+              <a href="#">Кредит на Покупки</a>
+              <a href="#">Рассрочка</a>
+              <a href="#">Кредит для ИП</a>
+              <a href="#">Кредит Наличными</a>
+              <a href="#">Автокредит на Kolesa.kz</a>
+            </div>
+            
+            <div class="dropdown-section">
+              <h3>Сервисы Kaspi.kz</h3>
+              <a href="#">Магазин</a>
+              <a href="#">Travel</a>
+              <a href="#">Платежи</a>
+              <a href="#">Мой банк</a>
+              <a href="#">Переводы</a>
+              <a href="#">Акции</a>
+              <a href="#">Госуслуги</a>
+              <a href="#">Объявления</a>
+              <a href="#">Kaspi Гид</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link">Бизнесу</a>
+      
+      <a href="#" class="nav-link">Kaspi Гид</a>
+    </nav>
+  </header>
+  
+  
+  <div class="products-grid">
+    <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
+  </div>
+</div>
