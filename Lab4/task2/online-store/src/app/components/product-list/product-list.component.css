@@ -1,0 +1,141 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  /* position: fixed; */ 
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;          
+  align-items: center;     
+  gap: 40px;    
+}
+.header img {
+  margin-left:140px;
+}
+.main-nav {
+  display: flex;         
+  align-items: center;   
+  margin-left:200px;
+  gap: 30px;               
+  flex: 1;  
+  
+  color:#F5F5F5;              
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.dropbtn:hover {
+  color: black;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 600px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 1001;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.dropdown-section h3 {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dropdown-section a {
+  
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.dropdown-section a:hover {
+  color: black;
+}
+
+
+.products-grid {
+  margin-top:50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}

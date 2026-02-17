@@ -1,0 +1,49 @@
+<div class="product-card">
+  <div class="product-image-container">
+    <img [src]="product.images[currentImageIndex]" [alt]="product.name" class="product-image">
+    <button class="nav-btn prev" (click)="prevImage()" *ngIf="product.images.length > 1">❮</button>
+    <button class="nav-btn next" (click)="nextImage()" *ngIf="product.images.length > 1">❯</button>
+    
+  </div>
+  <div class="thumbnail-container" *ngIf="product.images.length > 1">
+    <img *ngFor="let image of product.images; let i = index"
+         [src]="image"
+         [class.active]="i === currentImageIndex"
+         (click)="setImage(i)"
+         class="thumbnail">
+  </div>
+  
+  <div class="product-info">
+    <h3 class="product-name">{{ product.name }}</h3>
+    <button class="btn-description-toggle" (click)="toggleDescription()">
+      {{ showDescription ? 'Hide Description' : 'Show Description' }}
+    </button>
+    <p *ngIf="showDescription" class="product-description">
+      {{ product.description }}
+    </p>
+    
+    <div class="product-rating">
+      <span *ngFor="let star of getStarsArray()" class="star">
+        <span *ngIf="star <= getFullStars()">⭐</span>
+        <span *ngIf="star === getFullStars() + 1 && hasHalfStar()">✨</span>
+        <span *ngIf="star > getFullStars() + (hasHalfStar() ? 1 : 0)">☆</span>
+      </span>
+      <span class="rating-value">{{ product.rating }}</span>
+    </div>
+    
+    <div class="product-price">{{ product.price | number }} ₸</div>
+    
+    <div class="product-actions">
+      <a [href]="product.link" target="_blank" class="btn btn-primary">View on Kaspi</a>
+      <div class="share-buttons">
+        <button (click)="shareOnWhatsApp()" class="btn-share whatsapp" title="Share on WhatsApp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/662px-WhatsApp_icon.png" class = "imig">
+        </button>
+        <button (click)="shareOnTelegram()" class="btn-share telegram" title="Share on Telegram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/960px-Telegram_2019_Logo.svg.png" class="imig_2">
+        </button>
+      </div>
+    </div>
+    
+  </div>
+</div>
