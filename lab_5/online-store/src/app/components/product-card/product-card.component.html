@@ -1,0 +1,72 @@
+<div class="product-card">
+  <div class="product-image-container">
+    <img [src]="product.images[currentImageIndex]" [alt]="product.name" class="product-image">
+    @if (product.images.length > 1) {
+      <button class="nav-btn prev" (click)="prevImage()">❮</button>
+      <button class="nav-btn next" (click)="nextImage()">❯</button>
+    }
+  </div>
+  
+  @if (product.images.length > 1) {
+    <div class="thumbnail-container">
+      @for (image of product.images; track image; let i = $index) {
+        <img [src]="image"
+             [class.active]="i === currentImageIndex"
+             (click)="setImage(i)"
+             class="thumbnail">
+      }
+    </div>
+  }
+  
+  <div class="product-info">
+    <h3 class="product-name">{{ product.name }}</h3>
+    <button class="btn-description-toggle" (click)="toggleDescription()">
+      {{ showDescription ? 'Hide Description' : 'Show Description' }}
+    </button>
+    
+    @if (showDescription) {
+      <p class="product-description">
+        {{ product.description }}
+      </p>
+    }
+    
+    <div class="product-rating">
+      @for (star of getStarsArray(); track star) {
+        <span class="star">
+          @if (star <= getFullStars()) {
+            ⭐
+          } @else if (star === getFullStars() + 1 && hasHalfStar()) {
+            ✨
+          } @else {
+            ☆
+          }
+        </span>
+      }
+      <span class="rating-value">{{ product.rating }}</span>
+    </div>
+    
+    <div class="product-price">{{ product.price | number }} ₸</div>
+    
+    <div class="product-likes">
+      <button class="btn-like" [class.liked]="isLiked" (click)="onLike()">
+        <span class="heart">❤</span>
+        <span class="likes-count">{{ product.likes }}</span>
+      </button>
+    </div>
+    
+    <div class="product-actions">
+      <a [href]="product.link" target="_blank" class="btn btn-primary">View on Kaspi</a>
+      <div class="share-buttons">
+        <button (click)="shareOnWhatsApp()" class="btn-share whatsapp" title="Share on WhatsApp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/662px-WhatsApp_icon.png" class="imig">
+        </button>
+        <button (click)="shareOnTelegram()" class="btn-share telegram" title="Share on Telegram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/960px-Telegram_2019_Logo.svg.png" class="imig_2">
+        </button>
+        <button (click)="onDelete()" class="btn-share delete" title="Delete">
+          🗑️
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
