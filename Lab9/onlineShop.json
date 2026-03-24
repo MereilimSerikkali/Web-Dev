@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "name": "asus",
+    "price": 1000,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 6
+  },
+  {
+    "id": 2,
+    "name": "hp",
+    "price": 1000,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 6
+  },
+  {
+    "id": 3,
+    "name": "huawei",
+    "price": 10020,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 6
+  },
+  {
+    "id": 4,
+    "name": "apple",
+    "price": 20020,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 6
+  },
+  {
+    "id": 5,
+    "name": "expensive one",
+    "price": 600020020,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 6
+  },
+  {
+    "id": 6,
+    "name": "cheap one",
+    "price": 20,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 5
+  },
+  {
+    "id": 7,
+    "name": "samsung",
+    "price": 20,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 5
+  },
+  {
+    "id": 8,
+    "name": "iphone",
+    "price": 5000,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 5
+  },
+  {
+    "id": 9,
+    "name": "google",
+    "price": 1000,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 5
+  },
+  {
+    "id": 10,
+    "name": "huawei",
+    "price": 100,
+    "description": "",
+    "count": 0,
+    "is_active": false,
+    "category": 5
+  },
+  {
+    "id": 11,
+    "name": "diamond",
+    "price": 100000,
+    "description": "amazing natural",
+    "count": 1,
+    "is_active": false,
+    "category": 3
+  },
+  {
+    "id": 12,
+    "name": "saphire",
+    "price": 100,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 3
+  },
+  {
+    "id": 13,
+    "name": "ruby",
+    "price": 1020,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 3
+  },
+  {
+    "id": 14,
+    "name": "emerald",
+    "price": 1420,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 3
+  },
+  {
+    "id": 15,
+    "name": "crystal",
+    "price": 1,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 3
+  },
+  {
+    "id": 16,
+    "name": "sandy stone",
+    "price": 0,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 3
+  },
+  {
+    "id": 17,
+    "name": "lmao",
+    "price": 0,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 2
+  },
+  {
+    "id": 18,
+    "name": "rofl",
+    "price": 0,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 2
+  },
+  {
+    "id": 19,
+    "name": "lol",
+    "price": 0,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 2
+  },
+  {
+    "id": 20,
+    "name": "xD",
+    "price": 0,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 2
+  },
+  {
+    "id": 21,
+    "name": "XD",
+    "price": 0,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 2
+  },
+  {
+    "id": 22,
+    "name": "mm",
+    "price": 0,
+    "description": "amazing",
+    "count": 1,
+    "is_active": false,
+    "category": 1
+  },
+  {
+    "id": 23,
+    "name": "mm",
+    "price": 0,
+    "description": "mmm",
+    "count": 1,
+    "is_active": false,
+    "category": 1
+  },
+  {
+    "id": 24,
+    "name": "mmm",
+    "price": 0,
+    "description": "mmmm",
+    "count": 1,
+    "is_active": false,
+    "category": 1
+  },
+  {
+    "id": 25,
+    "name": "mmmm",
+    "price": 0,
+    "description": "mmmm",
+    "count": 1,
+    "is_active": false,
+    "category": 1
+  },
+  {
+    "id": 26,
+    "name": "mmmmm",
+    "price": 0,
+    "description": "mmmmm",
+    "count": 1,
+    "is_active": false,
+    "category": 1
+  },
+  {
+    "id": 27,
+    "name": "mmmmm...",
+    "price": 0,
+    "description": "mmmmm...",
+    "count": 1,
+    "is_active": false,
+    "category": 1
+  }
+]
