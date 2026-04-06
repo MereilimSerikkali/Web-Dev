@@ -1,0 +1,12 @@
+$kind: http-request
+name: Update Category
+url: http://127.0.0.1:8000/api/categories/1/
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Sports Updated\"\r
+
+    }"
+order: 4172860959684350
